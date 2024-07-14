@@ -1,7 +1,7 @@
-{
+export const dataTR = {
     "header": {
-        "darkMode": "Gece Modu",
-        "lightMode": "Gündüz Modu",
+        "darkModeSwitch": "Gece Modu",
+        "lightModeSwitch": "Gündüz Modu",
         "language": "EN",
         "skills": "Beceriler",
         "projects": "Projeler",
