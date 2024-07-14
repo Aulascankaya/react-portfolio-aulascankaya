@@ -10,7 +10,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div>
+    <div className={`App dark:bg-dark-bg bg-white}`}>
       <ToastContainer />
       <Header />
       <Intro />
