@@ -4,7 +4,7 @@ import githubLight from "../assets/github.svg";
 import LinkedInLight from "../assets/LinkedIn.svg";
 import githubDark from "../assets/githubDark.svg";
 import LinkedInDark from "../assets/LinkedInDark.svg";
-import ULAS from '../assets/ulas.jpg';
+import ULAS from '../assets/ulas1.jpeg';
 
 export const Intro = () => {
   const { darkMode } = useDarkMode();

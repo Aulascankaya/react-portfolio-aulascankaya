@@ -74,7 +74,7 @@ export const dataTR = {
         "items": [
             {
                 "title": "Workintech",
-                "image": "Rectangle-41.jpg",
+                "image": "project1.jpg",
                 "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
                 "technologies": [
                     "React",
@@ -89,7 +89,7 @@ export const dataTR = {
             },
             {
                 "title": "Random Jokes",
-                "image": "Rectangle-42.jpg",
+                "image": "project2.jpg",
                 "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
                 "technologies": [
                     "React",
@@ -103,7 +103,7 @@ export const dataTR = {
             },
             {
                 "title": "Journey",
-                "image": "Rectangle-43.jpg",
+                "image": "project3.jpg",
                 "description": "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
                 "technologies": [
                     "React",
