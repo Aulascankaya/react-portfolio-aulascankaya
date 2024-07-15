@@ -10,8 +10,8 @@ export const dataTR = {
     },
     "introduction": {
         "name": "Ahmet Ulaş Çankaya",
-        "heading1": "Çözüm Üretici!",
-        "heading2": "Analitik Düşünür!",
+        "heading1": "HAZERAN ÇİCEĞİM!",
+        "heading2": "SENİ ÇOK SEVİYORUM!",
         "description": "Merhaba, ben Ahmet Ulaş Çankaya. Ben bir frontend geliştiriciyim. Tüm ürünlerinizin yönetimi için bir geliştirici arıyorsanız, tanışalım!",
         "hireMe": "İletişim",
         "github": "Github",
