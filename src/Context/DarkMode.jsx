@@ -29,6 +29,7 @@ export const DarkModeProvider = ({ children }) => {
   );
 };
 
+
 export const useDarkMode = () => {
 // Karanlık mod durumu ve karanlık modu değiştirme işlevine erişim sağlanır
   return useContext(DarkModeContext);
