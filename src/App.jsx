@@ -1,12 +1,12 @@
 import { ToastContainer } from "react-toastify";
 import "./App.css";
 
-import { Header } from "./components/Header";
-import { Intro } from "./components/Intro";
-import { Profil } from "./components/Profil";
-import { Projects } from "./components/Projects";
-import { Skills } from "./components/Skills";
-import { Footer } from "./components/Footer";
+import { Header } from "./Components/Header";
+import { Intro } from "./Components/Intro";
+import { Profil } from "./Components/Profil";
+import { Projects } from "./Components/Projects";
+import { Skills } from "./Components/Skills";
+import { Footer } from "./Components/Footer";
 
 function App() {
   return (
