@@ -1,9 +1,10 @@
-import { dataTR } from "../Datas/tr";
+/* eslint-disable react/prop-types */
 
-export const Footer = () => {
+
+export const Footer = ({lang}) => {
   const { contactHeader, contactEmail, personalBlog, github, linkedin, links } =
-    dataTR.footer;
-    
+    lang.footer;
+
   return (
     <footer id="footer" className="bg-gray-light dark:bg-dark-footer-bg w-full">
       <div className="max-w-[80%] xl:max-w-6xl m-auto py-16">

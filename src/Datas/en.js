@@ -1,7 +1,7 @@
 export const dataEN = {
     "header": {
-        "darkMode": "Dark Mode",
-        "lightMode": "Light Mode",
+        "darkModeSwitch": "Dark Mode",
+        "lightModeSwitch": "Light Mode",
         "skills": "Skills",
         "projects": "Projects",
         "language": "TR",
@@ -73,7 +73,7 @@ export const dataEN = {
         "items": [
             {
                 "title": "Workintech",
-                "image": "Rectangle-41.jpg",
+                "image": "project1.jpg",
                 "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
                 "technologies": [
                     "React",
@@ -87,7 +87,7 @@ export const dataEN = {
             },
             {
                 "title": "Random Jokes",
-                "image": "Rectangle-42.jpg",
+                "image": "project2.jpg",
                 "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
                 "technologies": [
                     "React",
@@ -101,7 +101,7 @@ export const dataEN = {
             },
             {
                 "title": "Journey",
-                "image": "Rectangle-43.jpg",
+                "image": "project3.jpg",
                 "description": "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to code and themes possible.",
                 "technologies": [
                     "React",

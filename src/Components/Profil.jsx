@@ -1,7 +1,8 @@
-import { dataTR } from "../Datas/tr";
+/* eslint-disable react/prop-types */
 
-export const Profil = () => {
-    const { title, basicInformation, aboutMe } = dataTR.profile;
+
+export const Profil = ({lang}) => {
+    const { title, basicInformation, aboutMe } = lang.profile;
     let test = 0;
     console.log(test)
     return (

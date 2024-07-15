@@ -1,18 +1,19 @@
+/* eslint-disable react/prop-types */
 import { useDarkMode } from "../Context/DarkMode";
 import { dataTR } from "../Datas/tr";
+import { dataEN } from "../Datas/en";
 import moon from "../assets/moon.svg";
 import sun from "../assets/sun.svg";
 
-export const Header = () => {
-  const {
-    darkModeSwitch,
-    lightModeSwitch,
-    hireMe,
-    projects,
-    skills,
-    language,
-  } = dataTR.header;
+export const Header = ({lang,setLang}) => {
+
   const { darkMode, toggleDarkMode } = useDarkMode();
+
+  const handleClick = () => {
+    setLang(lang === dataTR ? dataEN : dataTR);
+  };
+
+  const {lightModeSwitch,darkModeSwitch,skills,projects,hireMe} = lang.header
 
   return (
     <header className="flex flex-col max-w-[80%] xl:max-w-6xl m-auto justify-between">
@@ -40,8 +41,9 @@ export const Header = () => {
         <a
           href="#"
           className="dark:text-lilac text-toggle-purple font-medium tracking-wider"
+          onClick={handleClick}
         >
-          {language}
+          {lang === dataTR ? "EN" : "TR"}
         </a>
       </div>
 

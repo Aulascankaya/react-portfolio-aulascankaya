@@ -1,7 +1,8 @@
-import { dataTR } from "../Datas/tr";
+/* eslint-disable react/prop-types */
 
-export const Projects = () => {
-  const { title, items } = dataTR.projects;
+
+export const Projects = ({lang}) => {
+  const { title, items } = lang.projects;
 
   return (
     <div

@@ -1,12 +1,12 @@
+/* eslint-disable react/prop-types */
 import { useDarkMode } from "../Context/DarkMode";
-import { dataTR } from "../Datas/tr";
 import githubLight from "../assets/github.svg";
 import LinkedInLight from "../assets/LinkedIn.svg";
 import githubDark from "../assets/githubDark.svg";
 import LinkedInDark from "../assets/LinkedInDark.svg";
 import ULAS from '../assets/ulas1.jpeg';
 
-export const Intro = () => {
+export const Intro = ({lang}) => {
   const { darkMode } = useDarkMode();
 
   const {
@@ -18,7 +18,7 @@ export const Intro = () => {
     github,
     linkedin,
     links,
-  } = dataTR.introduction;
+  } = lang.introduction;
 
   return (
     <div className="flex flex-col lg:flex-row gap-x-8 max-w-[80%] xl:max-w-6xl m-auto py-16 place-content-between">

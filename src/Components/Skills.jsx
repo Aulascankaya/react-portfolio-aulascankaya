@@ -1,6 +1,6 @@
-import { dataTR } from "../Datas/tr";
-export const Skills = () => {
-  const { items,title} = dataTR.skills;
+/* eslint-disable react/prop-types */
+export const Skills = ({lang}) => {
+  const { items,title} = lang.skills;
 
   return (
     <div
