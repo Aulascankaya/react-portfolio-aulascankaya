@@ -2,6 +2,8 @@ import { dataTR } from "../Datas/tr";
 
 export const Profil = () => {
     const { title, basicInformation, aboutMe } = dataTR.profile;
+    let test = 0;
+    console.log(test)
     return (
         <div className="text-left max-w-[80%] xl:max-w-6xl m-auto">
             <h2 className="font-bold text-black-heading dark:text-bluish-gray text-4xl mb-4">{title}</h2>
@@ -25,5 +27,6 @@ export const Profil = () => {
                 </div>
             </div>
             <div className="h-[1px] bg-lilac mb-8 lg:mb-16"></div>
+
         </div>
     )}
