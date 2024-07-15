@@ -11,7 +11,7 @@ export const Projects = () => {
       <h2 className="font-bold text-black-heading dark:text-bluish-gray text-4xl mb-8">
         {title}
       </h2>
-      <div className="flex flex-col gap-x-4 lg:gap-x-8 lg:flex-row place-content-between">
+      <div className="flex flex-col gap-x-4 lg:gap-x-8 lg:flex-row place-content-between ">
         {items?.map((project, index) => (
           <div key={index} className="pb-8 lg:pb-16">
             <img src={`./${project.image}`} alt={project.title} />
