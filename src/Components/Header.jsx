@@ -4,13 +4,23 @@ import { dataTR } from "../Datas/tr";
 import { dataEN } from "../Datas/en";
 import moon from "../assets/moon.svg";
 import sun from "../assets/sun.svg";
+import { dataDE } from "../Datas/de";
+import tr from "../assets/tr.png";
+import en from "../assets/en.png";
+import de from "../assets/de.png";
 
 export const Header = ({lang,setLang}) => {
 
   const { darkMode, toggleDarkMode } = useDarkMode();
 
-  const handleClick = () => {
-    setLang(lang === dataTR ? dataEN : dataTR);
+  const handleClickTR = () => {
+    setLang(dataTR);
+  };
+  const handleClickEN = () => {
+    setLang(dataEN);
+  };
+  const handleClickDE = () => {
+    setLang(dataDE);
   };
 
   const {lightModeSwitch,darkModeSwitch,skills,projects,hireMe} = lang.header
@@ -41,9 +51,23 @@ export const Header = ({lang,setLang}) => {
         <a
           href="#"
           className="dark:text-lilac text-toggle-purple font-medium tracking-wider"
-          onClick={handleClick}
+          onClick={handleClickTR}
         >
-          {lang === dataTR ? "EN" : "TR"}
+          <img className="w-5 h-5" src={tr} />
+        </a>
+        <a
+          href="#"
+          className="dark:text-lilac text-toggle-purple font-medium tracking-wider"
+          onClick={handleClickEN}
+        >
+          <img className="w-5 h-5" src={en} />
+        </a>
+        <a
+          href="#"
+          className="dark:text-lilac text-toggle-purple font-medium tracking-wider"
+          onClick={handleClickDE}
+        >
+         <img className="w-5 h-5" src={de} />
         </a>
       </div>
 
