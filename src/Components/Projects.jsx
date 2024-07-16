@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
 
+import { useSelector } from "react-redux";
 
-export const Projects = ({lang}) => {
+
+export const Projects = (/* {lang} */) => {
+  const lang = useSelector((state) => state.language);
   const { title, items } = lang.projects;
 
   return (

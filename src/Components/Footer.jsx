@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
 
+import { useSelector } from "react-redux";
 
-export const Footer = ({lang}) => {
+
+export const Footer = (/*{lang}*/) => {
+  const lang = useSelector((state) => state.language);
   const { contactHeader, contactEmail, personalBlog, github, linkedin, links } =
     lang.footer;
 

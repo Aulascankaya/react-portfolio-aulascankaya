@@ -5,9 +5,11 @@ import LinkedInLight from "../assets/LinkedIn.svg";
 import githubDark from "../assets/githubDark.svg";
 import LinkedInDark from "../assets/LinkedInDark.svg";
 import ULAS from '../assets/ulas1.jpeg';
+import { useSelector } from "react-redux";
 
-export const Intro = ({lang}) => {
+export const Intro = (/*{lang}*/) => {
   const { darkMode } = useDarkMode();
+  const lang = useSelector((state) => state.language);
 
   const {
     name,

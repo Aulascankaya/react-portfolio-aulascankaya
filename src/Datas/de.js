@@ -130,8 +130,8 @@ export const dataDE = {
         }
     },
     "notifications": {
-        "pending": "Bitte warten...",
+
         "success": "Sprachwechsel erfolgreich!",
-        "error": "Wir haben ein Problem festgestellt :("
+        
     }
 }

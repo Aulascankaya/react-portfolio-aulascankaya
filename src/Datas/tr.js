@@ -130,8 +130,6 @@ export const dataTR = {
         }
     },
     "notifications": {
-        "pending": "Please wait...",
-        "success": "Language switch successful!",
-        "error": "We encountered an issue :("
+        "success": "Dil başarıyla değiştirildi!",
     }
 }

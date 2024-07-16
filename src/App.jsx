@@ -1,4 +1,5 @@
 import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
 
 import { Header } from "./Components/Header";
@@ -9,6 +10,8 @@ import { Skills } from "./Components/Skills";
 import { Footer } from "./Components/Footer";
 import { useState } from "react";
 import { dataTR } from "./Datas/tr";
+
+
 
 function App() {
   const [lang,setLang] = useState(dataTR)

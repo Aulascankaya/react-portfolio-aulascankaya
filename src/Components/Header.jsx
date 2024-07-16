@@ -8,22 +8,67 @@ import { dataDE } from "../Datas/de";
 import tr from "../assets/tr.png";
 import en from "../assets/en.png";
 import de from "../assets/de.png";
+import { toast } from "react-toastify";
+import { useDispatch, useSelector } from "react-redux";
+import { setLanguage } from "../store/actions/languageActions";
 
-export const Header = ({lang,setLang}) => {
-
+export const Header = (/*{ lang, setLang }*/) => {
   const { darkMode, toggleDarkMode } = useDarkMode();
+  const dispatch = useDispatch();
+  const lang = useSelector((state) => state.language);
 
-  const handleClickTR = () => {
+  const handleClick = (language) => {
+    dispatch(setLanguage(language));
+    toast(language.notifications.success, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      progress: undefined,
+      theme: darkMode === true ? "dark" : "light",
+    });
+  };
+
+  /*const handleClickTR = () => {
     setLang(dataTR);
+    toast(dataTR.notifications.success, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      progress: undefined,
+      theme: darkMode === true ?"dark": "light",
+    });
   };
   const handleClickEN = () => {
     setLang(dataEN);
+    toast(dataEN.notifications.success, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      progress: undefined,
+      theme: darkMode === true ?"dark": "light",
+    });
   };
   const handleClickDE = () => {
     setLang(dataDE);
-  };
+    toast(dataDE.notifications.success, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      progress: undefined,
+      theme: darkMode === true ?"dark": "light",
+    });
+  };*/
 
-  const {lightModeSwitch,darkModeSwitch,skills,projects,hireMe} = lang.header
+  const { lightModeSwitch, darkModeSwitch, skills, projects, hireMe } =
+    lang.header;
 
   return (
     <header className="flex flex-col max-w-[80%] xl:max-w-6xl m-auto justify-between">
@@ -51,23 +96,23 @@ export const Header = ({lang,setLang}) => {
         <a
           href="#"
           className="dark:text-lilac text-toggle-purple font-medium tracking-wider"
-          onClick={handleClickTR}
+          onClick={() => handleClick(dataTR)}
         >
           <img className="w-5 h-5" src={tr} />
         </a>
         <a
           href="#"
           className="dark:text-lilac text-toggle-purple font-medium tracking-wider"
-          onClick={handleClickEN}
+          onClick={() => handleClick(dataEN)}
         >
           <img className="w-5 h-5" src={en} />
         </a>
         <a
           href="#"
           className="dark:text-lilac text-toggle-purple font-medium tracking-wider"
-          onClick={handleClickDE}
+          onClick={() => handleClick(dataDE)}
         >
-         <img className="w-5 h-5" src={de} />
+          <img className="w-5 h-5" src={de} />
         </a>
       </div>
 

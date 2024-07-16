@@ -1,5 +1,8 @@
+import { useSelector } from "react-redux";
+
 /* eslint-disable react/prop-types */
-export const Skills = ({lang}) => {
+export const Skills = (/* {lang} */) => {
+  const lang = useSelector((state) => state.language);
   const { items,title} = lang.skills;
 
   return (

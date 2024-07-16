@@ -128,8 +128,8 @@ export const dataEN = {
         }
     },
     "notifications": {
-        "pending": "Lütfen bekleyin...",
-        "success": "Dil başarıyla değiştirildi!",
-        "error": "Bir sorun var :("
+
+        "success": "Language switch successful!",
+
     }
 }

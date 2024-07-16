@@ -1,7 +1,10 @@
 /* eslint-disable react/prop-types */
 
+import { useSelector } from "react-redux";
 
-export const Profil = ({lang}) => {
+
+export const Profil = (/* {lang} */) => {
+    const lang = useSelector((state) => state.language);
     const { title, basicInformation, aboutMe } = lang.profile;
     let test = 0;
     console.log(test)
