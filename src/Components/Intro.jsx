@@ -75,7 +75,7 @@ export const Intro = (/*{lang}*/) => {
       </div>
       <img
         className="rounded-2xl mt-8 lg:mt-0 max-w-[476px] max-h-[375px]"
-        src={image}
+        src={`./${image}`}
       />
     </div>
   );
