@@ -17,7 +17,6 @@ import { useEffect } from "react";
 function App() {
 
   const darkMode = useSelector((state) => state.darkMode);
-  const lang = useSelector((state) => state.language);
 
   useEffect(() => {
     const body = document.body;
@@ -31,12 +30,12 @@ function App() {
   return (
     <div className={`App ${darkMode ? 'dark:bg-dark-bg' : 'bg-white'}`}>
       <ToastContainer />
-      <Header lang={lang} />
-      <Intro  lang={lang}/>
-      <Skills  lang={lang}/>
-      <Profil  lang={lang}/>
-      <Projects  lang={lang}/>
-      <Footer  lang={lang}/>
+      <Header  />
+      <Intro  />
+      <Skills  />
+      <Profil  />
+      <Projects  />
+      <Footer  />
     </div>
   );
 }
