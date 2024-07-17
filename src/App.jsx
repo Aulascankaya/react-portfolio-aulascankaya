@@ -8,18 +8,30 @@ import { Profil } from "./Components/Profil";
 import { Projects } from "./Components/Projects";
 import { Skills } from "./Components/Skills";
 import { Footer } from "./Components/Footer";
-import { useState } from "react";
-import { dataTR } from "./Datas/tr";
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
+
 
 
 
 function App() {
-  const [lang,setLang] = useState(dataTR)
+
+  const darkMode = useSelector((state) => state.darkMode);
+  const lang = useSelector((state) => state.language);
+
+  useEffect(() => {
+    const body = document.body;
+    if (darkMode) {
+      body.classList.add('dark');
+    } else {
+      body.classList.remove('dark');
+    }
+  }, [darkMode]);
 
   return (
-    <div className={`App dark:bg-dark-bg bg-white`}>
+    <div className={`App ${darkMode ? 'dark:bg-dark-bg' : 'bg-white'}`}>
       <ToastContainer />
-      <Header lang={lang} setLang={setLang}/>
+      <Header lang={lang} />
       <Intro  lang={lang}/>
       <Skills  lang={lang}/>
       <Profil  lang={lang}/>

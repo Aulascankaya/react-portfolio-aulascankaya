@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-import { useDarkMode } from "../Context/DarkMode";
 import { dataTR } from "../Datas/tr";
 import { dataEN } from "../Datas/en";
 import moon from "../assets/moon.svg";
@@ -11,17 +10,19 @@ import de from "../assets/de.png";
 import { toast } from "react-toastify";
 import { useDispatch, useSelector } from "react-redux";
 import { setLanguage } from "../store/actions/languageActions";
+import { toggleDarkMode } from "../store/actions/darkModeActions";
 
 export const Header = (/*{ lang, setLang }*/) => {
-  const { darkMode, toggleDarkMode } = useDarkMode();
+  //const { darkMode, toggleDarkMode } = useDarkMode();
   const dispatch = useDispatch();
   const lang = useSelector((state) => state.language);
+  const darkMode = useSelector((state) => state.darkMode);
 
   const handleClick = (language) => {
     dispatch(setLanguage(language));
     toast(language.notifications.success, {
       position: "top-right",
-      autoClose: 5000,
+      autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
       pauseOnHover: true,
@@ -75,7 +76,7 @@ export const Header = (/*{ lang, setLang }*/) => {
       <div className="flex items-center space-x-2 ml-auto my-8">
         <div
           className="relative w-10 h-5 flex items-center cursor-pointer transition-colors duration-300 rounded-full bg-toggle-purple dark:bg-toggle-gray"
-          onClick={toggleDarkMode}
+          onClick={() => dispatch(toggleDarkMode())}
         >
           <div
             className="w-4 h-4 cursor-pointer transition-transform duration-300 transform"
@@ -123,14 +124,14 @@ export const Header = (/*{ lang, setLang }*/) => {
           </span>
         </div>
         <nav className="flex items-center space-x-2 lg:space-x-16 ml-auto">
-          <a href="#" className="text-gray">
+          <a href="#skills" className="text-gray">
             {skills}
           </a>
-          <a href="#" className="text-gray">
+          <a href="#projects" className="text-gray">
             {projects}
           </a>
           <a
-            href="#"
+            href="#footer"
             className="text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white"
           >
             {hireMe}

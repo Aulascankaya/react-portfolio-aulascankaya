@@ -1,14 +1,14 @@
 /* eslint-disable react/prop-types */
-import { useDarkMode } from "../Context/DarkMode";
+
 import githubLight from "../assets/github.svg";
 import LinkedInLight from "../assets/LinkedIn.svg";
 import githubDark from "../assets/githubDark.svg";
 import LinkedInDark from "../assets/LinkedInDark.svg";
-import ULAS from '../assets/ulas1.jpeg';
+import ULAS from '../assets/ulas2.jpg';
 import { useSelector } from "react-redux";
 
 export const Intro = (/*{lang}*/) => {
-  const { darkMode } = useDarkMode();
+  const darkMode = useSelector((state) => state.darkMode);
   const lang = useSelector((state) => state.language);
 
   const {
