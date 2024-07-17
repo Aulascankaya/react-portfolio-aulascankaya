@@ -20,7 +20,7 @@ export const Intro = (/*{lang}*/) => {
     hireMe,
     github,
     linkedin,
-    links,image
+    links,
   } = lang.introduction;
 
   return (
