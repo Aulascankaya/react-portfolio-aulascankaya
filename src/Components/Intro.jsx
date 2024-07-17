@@ -4,7 +4,8 @@ import githubLight from "../assets/github.svg";
 import LinkedInLight from "../assets/LinkedIn.svg";
 import githubDark from "../assets/githubDark.svg";
 import LinkedInDark from "../assets/LinkedInDark.svg";
-import {ULAS} from "../assets/ulas2.jpg"
+import profil from "../assets/ulas3.jpg"
+
 
 import { useSelector } from "react-redux";
 
@@ -76,7 +77,7 @@ export const Intro = (/*{lang}*/) => {
       </div>
       <img
         className="rounded-2xl mt-8 lg:mt-0 max-w-[476px] max-h-[375px]"
-        src={ULAS}
+        src={profil}
       />
     </div>
   );
