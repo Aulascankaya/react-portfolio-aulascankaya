@@ -16,6 +16,7 @@ export const dataTR = {
         "hireMe": "İletişim",
         "github": "Github",
         "linkedin": "LinkedIn",
+        "image": "ulas2.jpg",
         "links": {
             "github": "https://github.com/Aulascankaya",
             "linkedin": "https://www.linkedin.com/in/ahmetulascankaya/"

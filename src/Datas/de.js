@@ -16,10 +16,12 @@ export const dataDE = {
         "hireMe": "Kontakt",
         "github": "Github",
         "linkedin": "LinkedIn",
+        "image": "ulas2.jpg",
         "links": {
             "github": "https://github.com/Aulascankaya",
             "linkedin": "https://www.linkedin.com/in/ahmetulascankaya/"
         }
+
     },
     "skills": {
         "title": "Fähigkeiten",
@@ -132,6 +134,6 @@ export const dataDE = {
     "notifications": {
 
         "success": "Sprachwechsel erfolgreich!",
-        
+
     }
 }
