@@ -111,21 +111,21 @@ export const Header = (/*{ lang, setLang }*/) => {
          {/* DİL SEÇME*/}
         <a
           href="#"
-          className="dark:text-lilac text-toggle-purple font-medium tracking-wider"
+          className="dark:text-lilac text-toggle-purple font-medium tracking-wider hover:shadow-md hover:shadow-dark-project-name"
           onClick={() => handleClick(dataTR)}
         >
           <img className="w-5 h-5" src={tr} />
         </a>
         <a
           href="#"
-          className="dark:text-lilac text-toggle-purple font-medium tracking-wider"
+          className="dark:text-lilac text-toggle-purple font-medium tracking-wider hover:shadow-md hover:shadow-dark-project-name"
           onClick={() => handleClick(dataEN)}
         >
           <img className="w-5 h-5" src={en} />
         </a>
         <a
           href="#"
-          className="dark:text-lilac text-toggle-purple font-medium tracking-wider"
+          className="dark:text-lilac text-toggle-purple font-medium tracking-wider hover:shadow-md hover:shadow-dark-project-name"
           onClick={() => handleClick(dataDE)}
         >
           <img className="w-5 h-5" src={de} />
@@ -139,16 +139,16 @@ export const Header = (/*{ lang, setLang }*/) => {
           </span>
         </div>
         <nav className="flex items-center space-x-2 lg:space-x-16 ml-auto">
-          <a onClick={() => scrollToSection("skills")} href="#" className="text-gray">
+          <a onClick={() => scrollToSection("skills")} href="#" className="text-gray ">
             {skills}
           </a>
-          <a onClick={() => scrollToSection("projects")} href="#" className="text-gray">
+          <a onClick={() => scrollToSection("projects")} href="#" className="text-gray ">
             {projects}
           </a>
           <a
              onClick={() => scrollToSection("footer")}
             href="#"
-            className="text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white"
+            className="text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white hover:shadow-md hover:shadow-dark-project-name"
           >
             {hireMe}
           </a>

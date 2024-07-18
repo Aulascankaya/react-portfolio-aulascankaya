@@ -51,7 +51,7 @@ export const Intro = (/*{lang}*/) => {
         <nav className="flex flex-wrap place-content-evenly xl:place-content-between max-w-md mt-8">
           <button onClick={scrollToFooter}
             className={
-              "text-white bg-navy-blue m-2 xl:m-0 h-14 pt-3 px-4 lg:pl-4 w-32 xl:w-36 border border-navy-blue rounded-md dark:text-black-heading dark:bg-dark-mode-hire"
+              "text-white bg-navy-blue m-2 xl:m-0 h-14 pt-3 px-4 lg:pl-4 w-32 xl:w-36 border border-navy-blue rounded-md dark:text-black-heading dark:bg-dark-mode-hire hover:shadow-md hover:shadow-dark-project-name"
             }
           >
             {hireMe}
@@ -59,7 +59,7 @@ export const Intro = (/*{lang}*/) => {
           <a
             href={links.github}
             className={
-              "text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-32 xl:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button"
+              "text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-32 xl:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button hover:shadow-md hover:shadow-dark-project-name"
             }
           >
             {darkMode ? (
@@ -72,7 +72,7 @@ export const Intro = (/*{lang}*/) => {
           <a
             href={links.linkedin}
             className={
-              "inline-flex text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-30 xl:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button"
+              "inline-flex text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-30 xl:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button hover:shadow-md hover:shadow-dark-project-name"
             }
           >
             {darkMode ? (
