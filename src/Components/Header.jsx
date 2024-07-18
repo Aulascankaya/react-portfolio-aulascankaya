@@ -31,6 +31,13 @@ export const Header = (/*{ lang, setLang }*/) => {
     });
   };
 
+  const scrollToSection = (id) => {
+    //Scroll ile ilgili bölüme geçiş
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   /*const handleClickTR = () => {
     setLang(dataTR);
     toast(dataTR.notifications.success, {
@@ -124,14 +131,15 @@ export const Header = (/*{ lang, setLang }*/) => {
           </span>
         </div>
         <nav className="flex items-center space-x-2 lg:space-x-16 ml-auto">
-          <a href="#skills" className="text-gray">
+          <a onClick={() => scrollToSection("skills")} href="#" className="text-gray">
             {skills}
           </a>
-          <a href="#projects" className="text-gray">
+          <a onClick={() => scrollToSection("projects")} href="#" className="text-gray">
             {projects}
           </a>
           <a
-            href="#footer"
+             onClick={() => scrollToSection("footer")}
+            href="#"
             className="text-navy-blue px-4 py-2 border border-navy-blue rounded-md dark:bg-white"
           >
             {hireMe}

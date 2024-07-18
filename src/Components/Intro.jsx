@@ -24,6 +24,14 @@ export const Intro = (/*{lang}*/) => {
     links,
   } = lang.introduction;
 
+
+  const scrollToFooter = () => {
+    const footer = document.getElementById("footer");
+    if (footer) {
+      footer.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="flex flex-col lg:flex-row gap-x-8 max-w-[80%] xl:max-w-6xl m-auto py-16 place-content-between">
       <div className="text-left">
@@ -40,7 +48,7 @@ export const Intro = (/*{lang}*/) => {
           {description}
         </p>
         <nav className="flex flex-wrap place-content-evenly xl:place-content-between max-w-md mt-8">
-          <button
+          <button onClick={scrollToFooter}
             className={
               "text-white bg-navy-blue m-2 xl:m-0 h-14 pt-3 px-4 lg:pl-4 w-32 xl:w-36 border border-navy-blue rounded-md dark:text-black-heading dark:bg-dark-mode-hire"
             }
