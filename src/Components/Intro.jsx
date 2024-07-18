@@ -76,7 +76,7 @@ export const Intro = (/*{lang}*/) => {
         </nav>
       </div>
       <img
-        className="rounded-2xl mt-8 lg:mt-0 max-w-[476px] max-h-[375px]"
+        className="rounded-2xl mt-8 lg:mt-0 max-w-[476px] max-h-[375px] shadow-2xl  dark:shadow-lg dark:shadow-dark-project-name"
         src={profil}
       />
     </div>

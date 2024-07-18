@@ -10,6 +10,7 @@ import { Skills } from "./Components/Skills";
 import { Footer } from "./Components/Footer";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
+import axios from "axios";
 
 
 
@@ -17,6 +18,7 @@ import { useEffect } from "react";
 function App() {
 
   const darkMode = useSelector((state) => state.darkMode);
+  const lang = useSelector((state) => state.language);
 
   useEffect(() => {
     const body = document.body;
@@ -27,8 +29,18 @@ function App() {
     }
   }, [darkMode]);
 
+  useEffect(() => {
+    axios.post('https://reqres.in/api/workintech', lang)
+    .then(response => {
+        console.log('Veri gönderildi:', response.data);
+    })
+    .catch(error => {
+        console.error('Veri gönderilemedi:', error);
+    });
+  }, []);
+
   return (
-    <div className={`App ${darkMode ? 'dark:bg-dark-bg' : 'bg-white'}`}>
+    <div className={darkMode ? 'dark:bg-dark-bg' : 'bg-white'}>
       <ToastContainer />
       <Header  />
       <Intro  />
