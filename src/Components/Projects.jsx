@@ -40,12 +40,14 @@ export const Projects = (/* {lang} */) => {
               <a
                 className="text-navy-blue dark:text-dark-mode-hire"
                 href={project.githubLink}
+                target="_blank"
               >
                 {project.github}
               </a>
               <a
                 className="text-navy-blue dark:text-dark-mode-hire"
                 href={project.viewSiteLink}
+                target="_blank"
               >
                 {project.viewSiteLabel}
               </a>
