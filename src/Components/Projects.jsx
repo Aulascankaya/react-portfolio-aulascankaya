@@ -15,6 +15,7 @@ export const Projects = (/* {lang} */) => {
       <h2 className="font-bold text-black-heading dark:text-bluish-gray text-4xl mb-8">
         {title}
       </h2>
+      {/*Projeler kısmını mapliyoruz*/}
       <div className="flex flex-col gap-x-4 lg:gap-x-8 lg:flex-row place-content-between ">
         {items?.map((project, index) => (
           <div key={index} className="pb-8 lg:pb-16">

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
@@ -20,6 +21,7 @@ function App() {
   const darkMode = useSelector((state) => state.darkMode);
   const lang = useSelector((state) => state.language);
 
+  // darkMode
   useEffect(() => {
     const body = document.body;
     if (darkMode) {
@@ -29,6 +31,7 @@ function App() {
     }
   }, [darkMode]);
 
+  // axios reqres
   useEffect(() => {
     axios.post('https://reqres.in/api/workintech', lang)
     .then(response => {

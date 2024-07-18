@@ -6,14 +6,15 @@ import { useSelector } from "react-redux";
 export const Profil = (/* {lang} */) => {
     const lang = useSelector((state) => state.language);
     const { title, basicInformation, aboutMe } = lang.profile;
-    let test = 0;
-    console.log(test)
+
     return (
         <div className="text-left max-w-[80%] xl:max-w-6xl m-auto">
             <h2 className="font-bold text-black-heading dark:text-bluish-gray text-4xl mb-4">{title}</h2>
             <div className="flex flex-col gap-x-16 lg:flex-row">
                 <div className="pb-8 lg:pb-16">
                     <h3 className="text-dark-purple dark:text-dark-mode-name text-2xl font-medium">{basicInformation.title}</h3>
+
+                    {/*Temel Bilgiler kısmını mapliyoruz*/}
                     <div className="flex flex-col place-content-between">
                         {basicInformation.items.map((item, index) => (
                             <div key={index} className="flex flex-row gap-x-4 lg:gap-x-8 text-black-heading dark:text-white">
@@ -23,6 +24,7 @@ export const Profil = (/* {lang} */) => {
                         ))}
                     </div>
                 </div>
+                      {/*Hakkında kısmını mapliyoruz*/}
                 <div className="max-w-lg pb-8 lg:pb-16">
                     <h3 className="text-dark-purple dark:text-dark-mode-name text-2xl mb-4 font-medium">{aboutMe.title}</h3>
                     {aboutMe.paragraphs.map((paragraph, index) => (

@@ -18,6 +18,7 @@ export const Header = (/*{ lang, setLang }*/) => {
   const lang = useSelector((state) => state.language);
   const darkMode = useSelector((state) => state.darkMode);
 
+  //dil değişim handle
   const handleClick = (language) => {
     dispatch(setLanguage(language));
     toast(language.notifications.success, {
@@ -31,13 +32,16 @@ export const Header = (/*{ lang, setLang }*/) => {
     });
   };
 
+  //Scroll ile smooth geçiş
   const scrollToSection = (id) => {
-    //Scroll ile ilgili bölüme geçiş
+
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  // Redux öncesi handle
   /*const handleClickTR = () => {
     setLang(dataTR);
     toast(dataTR.notifications.success, {
@@ -80,11 +84,14 @@ export const Header = (/*{ lang, setLang }*/) => {
 
   return (
     <header className="flex flex-col max-w-[80%] xl:max-w-6xl m-auto justify-between">
+      {/* DARKMODE*/}
       <div className="flex items-center space-x-2 ml-auto my-8">
         <div
           className="relative w-10 h-5 flex items-center cursor-pointer transition-colors duration-300 rounded-full bg-toggle-purple dark:bg-toggle-gray"
           onClick={() => dispatch(toggleDarkMode())}
         >
+
+
           <div
             className="w-4 h-4 cursor-pointer transition-transform duration-300 transform"
             style={{
@@ -101,6 +108,7 @@ export const Header = (/*{ lang, setLang }*/) => {
 
         <span className="text-gray-dark">|</span>
 
+         {/* DİL SEÇME*/}
         <a
           href="#"
           className="dark:text-lilac text-toggle-purple font-medium tracking-wider"
@@ -123,8 +131,8 @@ export const Header = (/*{ lang, setLang }*/) => {
           <img className="w-5 h-5" src={de} />
         </a>
       </div>
-
-      <div className="flex items-center">
+         {/* NAVİGASYONLAR*/}
+      <nav className="flex items-center">
         <div className="h-10 w-10 rounded-full flex items-center justify-center bg-logo-lilac dark:bg-toggle-purple mr-auto">
           <span className="dark:text-dark-logo-font text-logo-purple transform rotate-45">
             AUC
@@ -145,7 +153,7 @@ export const Header = (/*{ lang, setLang }*/) => {
             {hireMe}
           </a>
         </nav>
-      </div>
+      </nav>
     </header>
   );
 };

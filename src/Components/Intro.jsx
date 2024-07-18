@@ -24,7 +24,7 @@ export const Intro = (/*{lang}*/) => {
     links,
   } = lang.introduction;
 
-
+ // Scroll ile smooth geçiş
   const scrollToFooter = () => {
     const footer = document.getElementById("footer");
     if (footer) {
@@ -34,6 +34,7 @@ export const Intro = (/*{lang}*/) => {
 
   return (
     <div className="flex flex-col lg:flex-row gap-x-8 max-w-[80%] xl:max-w-6xl m-auto py-16 place-content-between">
+      {/*İntro bilgiler */}
       <div className="text-left">
         <p className="mb-8 text-dark-purple dark:text-dark-mode-name">
           ————— {name}
@@ -83,6 +84,7 @@ export const Intro = (/*{lang}*/) => {
           </a>
         </nav>
       </div>
+      {/*İntro fotoğraf */}
       <img
         className="rounded-2xl mt-8 lg:mt-0 max-w-[476px] max-h-[375px] shadow-2xl  dark:shadow-lg dark:shadow-dark-project-name"
         src={profil}
