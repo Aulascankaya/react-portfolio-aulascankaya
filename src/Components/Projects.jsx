@@ -1,11 +1,37 @@
-/* eslint-disable react/prop-types */
-
 import { useSelector } from "react-redux";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-
-export const Projects = (/* {lang} */) => {
+export const Projects = () => {
   const lang = useSelector((state) => state.language);
   const { title, items } = lang.projects;
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   return (
     <div
@@ -15,11 +41,10 @@ export const Projects = (/* {lang} */) => {
       <h2 className="font-bold text-black-heading dark:text-bluish-gray text-4xl mb-8">
         {title}
       </h2>
-      {/*Projeler kısmını mapliyoruz*/}
-      <div className="flex flex-col gap-x-4 lg:gap-x-8 lg:flex-row place-content-between ">
+      <Slider {...settings} className="text-light-mode">
         {items?.map((project, index) => (
           <div key={index} className="pb-8 lg:pb-16">
-            <img src={`./${project.image}`} alt={project.title} />
+            <img src={`./${project.image}`} alt={project.title} className="rounded-md" />
             <h3 className="text-dark-purple dark:text-dark-mode-name text-2xl my-4 font-medium">
               {project.title}
             </h3>
@@ -41,6 +66,7 @@ export const Projects = (/* {lang} */) => {
                 className="text-navy-blue dark:text-dark-mode-hire"
                 href={project.githubLink}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {project.github}
               </a>
@@ -48,13 +74,14 @@ export const Projects = (/* {lang} */) => {
                 className="text-navy-blue dark:text-dark-mode-hire"
                 href={project.viewSiteLink}
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 {project.viewSiteLabel}
               </a>
             </div>
           </div>
         ))}
-      </div>
+      </Slider>
     </div>
   );
 };

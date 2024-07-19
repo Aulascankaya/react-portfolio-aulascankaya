@@ -28,7 +28,7 @@ export const dataTR = {
       {
         name: "Javascript",
         description:
-          "Türemiş sıfat gördüm gazete değerli olduğu için adanaya telefonu lakin layıkıyla filmini mi masanın.",
+          "JavaScript, web geliştirme için yaygın olarak kullanılan yüksek seviyeli, dinamik, zayıf tipli, nesne yönelimli ve çok paradigmalı bir programlama dilidir.",
       },
       {
         name: "React.Js",
@@ -37,6 +37,16 @@ export const dataTR = {
       },
       {
         name: "Node.Js",
+        description:
+          "Masaya doğru ona doğru gördüm sıradanlıktan duyulmamış ona doğru telefonu dışarı çıktılar ama.",
+      },
+      {
+        name: "Kotlin",
+        description:
+          "Masaya doğru ona doğru gördüm sıradanlıktan duyulmamış ona doğru telefonu dışarı çıktılar ama.",
+      },
+      {
+        name: "Java",
         description:
           "Masaya doğru ona doğru gördüm sıradanlıktan duyulmamış ona doğru telefonu dışarı çıktılar ama.",
       },
@@ -76,6 +86,7 @@ export const dataTR = {
   projects: {
     title: "Projeler",
     items: [
+
       {
         title: "Pizza Order",
         image: "pizzaProject.jpg",
@@ -87,23 +98,24 @@ export const dataTR = {
         viewSiteLabel: "Siteyi Görüntüleyin",
         viewSiteLink: "https://fsweb-s7-challenge-pizza-iota-eight.vercel.app/",
       },
+
       {
-        title: "Random Jokes",
-        image: "project2.jpg",
+        title: "Currency List App",
+        image: "currency.png",
         description:
           "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
-        technologies: ["React", "Redux", "Axios"],
+        technologies: ["Kotlin", "RxJava", "Retrofit"],
         github: "Github",
         githubLink: "",
         viewSiteLabel: "Siteyi Görüntüleyin",
-        viewSiteLink: "",
+        viewSiteLink: "untitled.gif",
       },
       {
-        title: "Journey",
-        image: "project3.jpg",
+        title: "Netflix Mockup",
+        image: "netflix.png",
         description:
           "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
-        technologies: ["React", "Redux", "Axios"],
+        technologies: ["HTML5", "CSS3", "R. Design"],
         github: "Github",
         githubLink: "",
         viewSiteLabel: "Siteyi Görüntüleyin",

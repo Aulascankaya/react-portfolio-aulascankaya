@@ -9,7 +9,7 @@ export const Footer = (/*{lang}*/) => {
     lang.footer;
 
   return (
-    <footer id="footer" className="bg-gray-light dark:bg-dark-footer-bg w-full">
+    <footer id="footer" className="bg-gray-light dark:bg-dark-footer-bg w-full mt-8">
       <div className="max-w-[80%] xl:max-w-6xl m-auto py-16">
         <h2
           className={`font-bold text-black-heading dark:text-bluish-gray text-left text-4xl max-w-lg`}
