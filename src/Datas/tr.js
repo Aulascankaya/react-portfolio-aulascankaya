@@ -2,7 +2,7 @@ export const dataTR = {
   header: {
     darkModeSwitch: "Gece Modu",
     lightModeSwitch: "Gündüz Modu",
-    language: "EN",
+    language: "TR",
     skills: "Beceriler",
     projects: "Projeler",
     hireMe: "İletişim",
@@ -27,28 +27,63 @@ export const dataTR = {
     items: [
       {
         name: "Javascript",
+        logo: "logoJS.png",
         description:
           "JavaScript, web geliştirme için yaygın olarak kullanılan yüksek seviyeli, dinamik, zayıf tipli, nesne yönelimli ve çok paradigmalı bir programlama dilidir.",
       },
       {
         name: "React.Js",
+        logo: "logoReact.png",
         description:
-          "Çünkü bilgisayarı salladı hesap makinesi ve masaya doğru bahar mıknatıslı okuma sayfası beğendim.",
+          "React.js, kullanıcı arayüzleri (UI) oluşturmak için kullanılan bir JavaScript kütüphanesidir.",
       },
       {
-        name: "Node.Js",
+        name: "Redux",
+        logo: "logoRedux.svg",
         description:
-          "Masaya doğru ona doğru gördüm sıradanlıktan duyulmamış ona doğru telefonu dışarı çıktılar ama.",
+          "Redux, JavaScript uygulamalarında durum yönetimini (state management) kolaylaştırmak için kullanılan bir kütüphanedir.",
       },
       {
         name: "Kotlin",
+        logo: "logoKotlin.svg",
         description:
-          "Masaya doğru ona doğru gördüm sıradanlıktan duyulmamış ona doğru telefonu dışarı çıktılar ama.",
+          "Kotlin, JetBrains tarafından geliştirilen, modern, statik olarak türlendirilmiş bir programlama dilidir.",
       },
       {
         name: "Java",
+        logo: "logoJava.png",
         description:
-          "Masaya doğru ona doğru gördüm sıradanlıktan duyulmamış ona doğru telefonu dışarı çıktılar ama.",
+          "Java, nesne yönelimli (object-oriented) bir programlama dilidir ve yazılım geliştirme dünyasında oldukça geniş bir kullanım alanına sahiptir.",
+      },
+      {
+        name: "HTML",
+        logo: "logoHTML.png",
+        description:
+          "HTML (HyperText Markup Language), web sayfalarının yapısını ve içeriğini tanımlamak için kullanılan temel işaretleme dilidir.",
+      },
+      {
+        name: "CSS",
+        logo: "logoCSS.png",
+        description:
+          "CSS (Cascading Style Sheets), HTML belgelerinin görünümünü ve düzenini tanımlamak için kullanılan bir stil dilidir.",
+      },
+      {
+        name: "Tailwind CSS",
+        logo: "logoTailwind.png",
+        description:
+          "Tailwind CSS, modern web geliştirme için kullanılan bir yardımcı sınıf (utility-first) CSS çerçevesidir. ",
+      },
+      {
+        name: "Figma",
+        logo: "logoFigma.png",
+        description:
+          "Figma, kullanıcı arayüzü ve deneyimi tasarımı için kullanılan, bulut tabanlı bir tasarım aracıdır. ",
+      },
+      {
+        name: "VS Code",
+        logo: "logoVScode.png",
+        description:
+          "Visual Studio Code (VS Code), Microsoft tarafından geliştirilmiş, hafif ve güçlü bir kaynak kod editörüdür.",
       },
     ],
   },
@@ -71,15 +106,16 @@ export const dataTR = {
         },
         {
           label: "Tercih Ettiği Rol",
-          value: "Frontend, Operasyon, Ürün, Proje Yöneticisi",
+          value: "Software Developer, Frontend Developer, Android Developer",
         },
       ],
     },
     aboutMe: {
       title: "Hakkımda",
       paragraphs: [
-        "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
-        "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
+        "Ben, sürekli öğrenme ve gelişim tutkusuna sahip bir frontend geliştiricisiyim.",
+        "Turizm sektöründe yönetici olarak görev yaptıktan sonra kariyerimi yazılım geliştirme alanına yönlendirmeye karar verdim.  ",
+        "Yazılımın farklı dallarında çeşitli eğitimler aldıktan sonra, en çok Front End geliştirmede başarılı olduğumu ve en büyük tatmini bu alanda bulduğumu keşfettim. Bu alandaki becerilerimi sürekli geliştirerek, kullanıcı deneyimini en üst düzeye çıkarmayı hedefliyorum."
       ],
     },
   },
@@ -89,7 +125,7 @@ export const dataTR = {
 
       {
         title: "Pizza Order",
-        image: "pizzaProject.jpg",
+        image: "projectPizza.jpg",
         description:
           "Bu proje, kullanıcıların kolayca pizza siparişi verebileceği modern ve kullanıcı dostu bir web uygulamasıdır. Proje, React ve react-hook-form kullanılarak geliştirilmiştir. Sipariş formu, react-hook-form kütüphanesi kullanılarak oluşturulmuştur. Bu sayede form doğrulama işlemleri güvenli ve verimli bir şekilde gerçekleştirilir.",
         technologies: ["React", "Redux", "Axios"],
@@ -98,29 +134,52 @@ export const dataTR = {
         viewSiteLabel: "Siteyi Görüntüleyin",
         viewSiteLink: "https://fsweb-s7-challenge-pizza-iota-eight.vercel.app/",
       },
+      {
+        title: "Netflix Mockup",
+        image: "projectNetflix.jpg",
+        description:
+          "Bu proje, HTML ve CSS kullanarak Netflix arayüzünün bir mockup'ını oluşturmayı içermekte olup, bu temel web teknolojilerinin etkili kullanımını sergilemektedir. Vurgu, düzen tasarımı için semantik HTML yapıları ve CSS Flexbox kullanımına yapılmıştır.Projede mobil uyumluluk için Responsive tasarım yaklaşımı uygulanmıştır.",
+        technologies: ["HTML5", "CSS3"],
+        github: "Github",
+        githubLink: "https://github.com/Aulascankaya/WiT-Sprint4-WiTFLIX",
+        viewSiteLabel: "Siteyi Görüntüleyin",
+        viewSiteLink: "https://wi-t-sprint4-wi-tflix.vercel.app/",
+      },
 
       {
         title: "Currency List App",
-        image: "currency.png",
+        image: "projectAndroids.png",
         description:
-          "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
-        technologies: ["Kotlin", "RxJava", "Retrofit"],
+          "Bu proje, Kotlin ile geliştirilmiş ve Free Currency API kullanarak en son döviz kurlarını çeken ve gösteren bir Android uygulamasıdır. Uygulama, dövizlerin ve bunlara karşılık gelen döviz kurlarının listesini sergileyerek, API çağrısı ile verileri dinamik olarak günceller. Veriler, RecyclerView içinde görüntülenir ve verilere tıklamak, detaylı bir görünümü tetikler.",
+        technologies: ["Kotlin", "API", ],
         github: "Github",
-        githubLink: "",
+        githubLink: "https://github.com/Aulascankaya/KotlinCurrencyApp",
         viewSiteLabel: "Siteyi Görüntüleyin",
         viewSiteLink: "untitled.gif",
       },
       {
-        title: "Netflix Mockup",
-        image: "netflix.png",
+        title: "Survivor Airship Game",
+        image: "projectAndroids.png",
         description:
-          "Kullanıcılarınızın hangi çerezleri kabul edeceğini veya reddedeceğini seçmesine olanak tanıyan basit, özelleştirilebilir, minimal düzeyde kurulum gerektiren bir çerez eklentisi. Vanilla JS, SCSS ve Parcel Bundler ile oluşturulmuştur, NPM paketi olarak sunulmaktadır ve git deposu kod ve temalarda her türlü özelleştirmeyi mümkün kılmaktadır.",
-        technologies: ["HTML5", "CSS3", "R. Design"],
+          "Survivor Airship, oyuncunun ekrana dokunarak bir hava gemisini kontrol ettiği ve düşman nesnelerden kaçındığı 2D bir mobil oyundur. Oyun, GDX kütüphanesi kullanılarak Android platformu için geliştirilmiştir.Oyuncular, düşmanlardan başarıyla kaçındıkça puan kazanır ve düşman nesnesine çarptığında oyun sona erer.",
+        technologies: ["Kotlin", "libGDX",],
         github: "Github",
-        githubLink: "",
+        githubLink: "https://github.com/Aulascankaya/Survivor-Bird-Game",
         viewSiteLabel: "Siteyi Görüntüleyin",
+        viewSiteLink: "https://www.youtube.com/watch?v=tC5dY7hXJZU",
+      },
+      {
+        title: "Diğer Projeler",
+        image: "projectWeb.jpg",
+        description:
+          "JavaScript, React, HTML, CSS, Kotlin ve Java geliştirmesinde çeşitli teknolojiler ve kavramları kapsayan bir proje koleksiyonu.Bu projeler, modern Web ve Android geliştirme uygulamalarında yetkinliği göstermektedir ve UI tasarımı, asenkron işlemler, veri yönetimi ve mimari desenler gibi konuları içermektedir.",
+        technologies: ["JS", "React","Kotlin","..."],
+        github: "Github",
+        githubLink: "https://github.com/Aulascankaya",
+        viewSiteLabel: "",
         viewSiteLink: "",
       },
+
     ],
   },
   footer: {

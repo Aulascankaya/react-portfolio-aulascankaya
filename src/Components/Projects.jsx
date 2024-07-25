@@ -48,7 +48,7 @@ export const Projects = () => {
             <h3 className="text-dark-purple dark:text-dark-mode-name text-2xl my-4 font-medium">
               {project.title}
             </h3>
-            <p className="my-4 max-w-72 text-gray dark:text-white">
+            <p className="my-4 max-w-72 min-h-80 text-gray dark:text-white">
               {project.description}
             </p>
             <div className="my-8">
@@ -61,7 +61,7 @@ export const Projects = () => {
                 </span>
               ))}
             </div>
-            <div className="flex place-content-between underline">
+            <div className="flex place-content-between underline pr-10">
               <a
                 className="text-navy-blue dark:text-dark-mode-hire"
                 href={project.githubLink}

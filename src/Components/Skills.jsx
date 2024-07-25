@@ -47,10 +47,14 @@ export const Skills = () => {
       <Slider {...settings}>
         {items.map((skill, index) => (
           <div key={index} className="pb-8 lg:pb-16">
+            <div className="flex items-center space-x-2  ">
+            <img src={`./${skill.logo}`} alt={skill.logo} className="rounded-md w-6 h-6 mb-5" />
             <h3 className="text-dark-purple dark:text-dark-mode-name text-2xl mb-4 font-medium">
               {skill.name}
             </h3>
-            <p className="text-gray dark:text-white">{skill.description}</p>
+
+            </div>
+            <p className="text-gray dark:text-white max-w-[80%]"  >{skill.description}</p>
           </div>
         ))}
       </Slider>
