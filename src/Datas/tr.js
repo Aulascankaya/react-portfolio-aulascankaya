@@ -98,7 +98,7 @@ export const dataTR = {
         },
         {
           label: "İkamet Şehri",
-          value: "Aydın",
+          value: "Emden",
         },
         {
           label: "Eğitim Durumu",
@@ -122,7 +122,17 @@ export const dataTR = {
   projects: {
     title: "Projeler",
     items: [
-
+      {
+        title: "Currency List App",
+        image: "projectAndroids.png",
+        description:
+          "Bu proje, Kotlin ile geliştirilmiş ve Free Currency API kullanarak en son döviz kurlarını çeken ve gösteren bir Android uygulamasıdır. Uygulama, dövizlerin ve bunlara karşılık gelen döviz kurlarının listesini sergileyerek, API çağrısı ile verileri dinamik olarak günceller. Veriler, RecyclerView içinde görüntülenir ve verilere tıklamak, detaylı bir görünümü tetikler.",
+        technologies: ["Kotlin", "API", ],
+        github: "Github",
+        githubLink: "https://github.com/Aulascankaya/KotlinCurrencyApp",
+        viewSiteLabel: "Siteyi Görüntüleyin",
+        viewSiteLink: "untitled.gif",
+      },
       {
         title: "Pizza Order",
         image: "projectPizza.jpg",
@@ -146,17 +156,7 @@ export const dataTR = {
         viewSiteLink: "https://wi-t-sprint4-wi-tflix.vercel.app/",
       },
 
-      {
-        title: "Currency List App",
-        image: "projectAndroids.png",
-        description:
-          "Bu proje, Kotlin ile geliştirilmiş ve Free Currency API kullanarak en son döviz kurlarını çeken ve gösteren bir Android uygulamasıdır. Uygulama, dövizlerin ve bunlara karşılık gelen döviz kurlarının listesini sergileyerek, API çağrısı ile verileri dinamik olarak günceller. Veriler, RecyclerView içinde görüntülenir ve verilere tıklamak, detaylı bir görünümü tetikler.",
-        technologies: ["Kotlin", "API", ],
-        github: "Github",
-        githubLink: "https://github.com/Aulascankaya/KotlinCurrencyApp",
-        viewSiteLabel: "Siteyi Görüntüleyin",
-        viewSiteLink: "untitled.gif",
-      },
+      
       {
         title: "Survivor Airship Game",
         image: "projectAndroids.png",

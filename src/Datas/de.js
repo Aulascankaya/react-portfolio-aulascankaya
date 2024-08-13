@@ -98,7 +98,7 @@ export const dataDE = {
           },
           {
             label: "Wohnort",
-            value: "Aydın",
+            value: "Emden",
           },
           {
             label: "Bildung",
@@ -123,6 +123,17 @@ export const dataDE = {
       title: "Projekte",
       items: [
         {
+          title: "Currency List App",
+          image: "projectAndroids.png",
+          description:
+            "Dieses Projekt ist eine Android-Anwendung, die mit Kotlin entwickelt wurde und die neuesten Wechselkurse mithilfe der Free Currency API abruft und anzeigt. Die App zeigt eine Liste von Währungen und deren entsprechenden Wechselkurse an, die Daten werden dynamisch durch API-Aufrufe aktualisiert. Die Daten werden in einer RecyclerView angezeigt, und das Klicken auf die Daten löst eine Detailansicht aus.",
+          technologies: ["Kotlin", "API"],
+          github: "Github",
+          githubLink: "https://github.com/Aulascankaya/KotlinCurrencyApp",
+          viewSiteLabel: "Website anzeigen",
+          viewSiteLink: "untitled.gif",
+        },
+        {
           title: "Pizza Order",
           image: "projectPizza.jpg",
           description:
@@ -143,17 +154,6 @@ export const dataDE = {
           githubLink: "https://github.com/Aulascankaya/WiT-Sprint4-WiTFLIX",
           viewSiteLabel: "Website anzeigen",
           viewSiteLink: "https://wi-t-sprint4-wi-tflix.vercel.app/",
-        },
-        {
-          title: "Currency List App",
-          image: "projectAndroids.png",
-          description:
-            "Dieses Projekt ist eine Android-Anwendung, die mit Kotlin entwickelt wurde und die neuesten Wechselkurse mithilfe der Free Currency API abruft und anzeigt. Die App zeigt eine Liste von Währungen und deren entsprechenden Wechselkurse an, die Daten werden dynamisch durch API-Aufrufe aktualisiert. Die Daten werden in einer RecyclerView angezeigt, und das Klicken auf die Daten löst eine Detailansicht aus.",
-          technologies: ["Kotlin", "API"],
-          github: "Github",
-          githubLink: "https://github.com/Aulascankaya/KotlinCurrencyApp",
-          viewSiteLabel: "Website anzeigen",
-          viewSiteLink: "untitled.gif",
         },
         {
           title: "Survivor Airship Game",

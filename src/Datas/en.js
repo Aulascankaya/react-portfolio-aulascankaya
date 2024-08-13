@@ -98,7 +98,7 @@ export const dataEN = {
           },
           {
             label: "Residence City",
-            value: "Aydın",
+            value: "Emden",
           },
           {
             label: "Education",
@@ -123,6 +123,17 @@ export const dataEN = {
       title: "Projects",
       items: [
         {
+          title: "Currency List App",
+          image: "projectAndroids.png",
+          description:
+            "This project is an Android application developed with Kotlin that fetches and displays the latest exchange rates using the Free Currency API. The app displays a list of currencies and their corresponding exchange rates, dynamically updating the data via API calls. The data is displayed within a RecyclerView, and clicking on the data triggers a detailed view.",
+          technologies: ["Kotlin", "API"],
+          github: "Github",
+          githubLink: "https://github.com/Aulascankaya/KotlinCurrencyApp",
+          viewSiteLabel: "View Site",
+          viewSiteLink: "untitled.gif",
+        },
+        {
           title: "Pizza Order",
           image: "projectPizza.jpg",
           description:
@@ -144,17 +155,7 @@ export const dataEN = {
           viewSiteLabel: "View Site",
           viewSiteLink: "https://wi-t-sprint4-wi-tflix.vercel.app/",
         },
-        {
-          title: "Currency List App",
-          image: "projectAndroids.png",
-          description:
-            "This project is an Android application developed with Kotlin that fetches and displays the latest exchange rates using the Free Currency API. The app displays a list of currencies and their corresponding exchange rates, dynamically updating the data via API calls. The data is displayed within a RecyclerView, and clicking on the data triggers a detailed view.",
-          technologies: ["Kotlin", "API"],
-          github: "Github",
-          githubLink: "https://github.com/Aulascankaya/KotlinCurrencyApp",
-          viewSiteLabel: "View Site",
-          viewSiteLink: "untitled.gif",
-        },
+        
         {
           title: "Survivor Airship Game",
           image: "projectAndroids.png",
