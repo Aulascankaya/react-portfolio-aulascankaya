@@ -61,6 +61,7 @@ export const Intro = (/*{lang}*/) => {
             className={
               "text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-32 xl:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button hover:shadow-md hover:shadow-dark-project-name"
             }
+            target="_blank"
           >
             {darkMode ? (
               <img src={githubDark} className="inline mr-2" />
@@ -74,6 +75,7 @@ export const Intro = (/*{lang}*/) => {
             className={
               "inline-flex text-navy-blue m-2 xl:m-0 pt-4 px-4 h-14 lg:pl-6 w-30 xl:w-36 border border-navy-blue rounded-md dark:text-dark-mode-hire dark:border-dark-mode-hire dark:bg-dark-gray-button hover:shadow-md hover:shadow-dark-project-name"
             }
+            target="_blank"
           >
             {darkMode ? (
               <img src={LinkedInDark} className="inline-flex mr-2 mb-4" />
