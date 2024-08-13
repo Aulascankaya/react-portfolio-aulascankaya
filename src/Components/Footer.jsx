@@ -33,12 +33,14 @@ export const Footer = (/*{lang}*/) => {
             <a
               href={links.github}
               className="text-green dark:text-dark-mode-green"
+              target="_blank"
             >
               {github}
             </a>
             <a
               href={links.linkedin}
               className="text-linkedin-blue dark:dark-mode-linkedin"
+              target="_blank"
             >
               {linkedin}
             </a>
