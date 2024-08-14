@@ -142,7 +142,7 @@ export const dataTR = {
         github: "Github",
         githubLink: "https://github.com/Aulascankaya/fsweb-s7-challenge-pizza",
         viewSiteLabel: "Siteyi Görüntüleyin",
-        viewSiteLink: "https://fsweb-s7-challenge-pizza-iota-eight.vercel.app/",
+        viewSiteLink: "https://techpizzaproject.vercel.app/",
       },
       {
         title: "Netflix Mockup",
